@@ -3,3 +3,5 @@
 <b>Observação: Porfólio ainda em desenvolvimento, sempre adicionando novas informações e novos projetos.</b>
 
 [Link do portfólio](https://ambrosio99.github.io/personal-portfolio/)
+
+![image](https://user-images.githubusercontent.com/105453348/207136083-de941243-899b-4041-87eb-42e675ac3696.png)
