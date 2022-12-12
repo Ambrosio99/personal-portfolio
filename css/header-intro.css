@@ -1,0 +1,144 @@
+/*Menu */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.menu a {
+  font-size: 1.125rem;
+  font-weight: 400;
+  border-bottom: 2px solid transparent;
+  padding: 10px 20px;
+  color: #141414;
+}
+
+.menu a:hover {
+  border-bottom: 2px solid #47c698;
+  transition: 0.3s;
+}
+
+/* Introdução */
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 40px 20px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 100px;
+  margin-bottom: 20px;
+}
+.introducao img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.intro-cont {
+  text-align: left;
+  margin: 0 auto;
+  position: relative;
+}
+
+.intro-texto {
+  font-size: 4.5rem;
+  font-weight: 700, bold;
+}
+.intro-texto::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 128px;
+  height: 128px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  z-index: -1;
+  top: -25px;
+  left: -45px;
+}
+
+.intro-sub {
+  margin-top: 30px;
+  color: #525252;
+  font-size: 1.5rem;
+  font-weight: 400, regular;
+  padding-left: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 1000px) {
+  .intro-texto {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    justify-items: center;
+    gap: 40px;
+    margin: 0px;
+  }
+  .header a {
+    background: #f5f5f5;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  .menu {
+    gap: 20px;
+    margin: 0px;
+  }
+  .menu a:hover {
+    border-bottom: 0px solid #47c69700;
+    transition: 0.3s;
+  }
+  .header img {
+    margin: 0px;
+  }
+
+  .introducao {
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+  }
+  .intro-texto {
+    font-size: 2.8rem;
+  }
+  .intro-texto::before {
+    width: 30px;
+    height: 10px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 550px) {
+  .introducao img {
+    display: none;
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .intro-texto::before {
+    top: -15px;
+  }
+  .header {
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  .header img {
+    margin: 0px;
+  }
+}
